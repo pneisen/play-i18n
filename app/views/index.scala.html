@@ -1,12 +1,16 @@
 @()(implicit lang: Lang, user: User, date: java.util.Date)
 @import java.text.DateFormat
+@import java.text.NumberFormat
+@import java.text.DecimalFormat
 
 @main("Welcome to Play Framework") {
 
     <div class="well">
-    	<h1>@Messages("Hello", user.name)</h1>
-    	<h1>Current Date: @DateFormat.getDateInstance(DateFormat.SHORT, lang.toLocale).format(date)</h1>
-		<h1>@Messages("string.not.in.fr")</h1>	    	
+    	<h2>@Messages("Hello", user.name)</h2>
+		<h2>@Messages("string.not.in.fr")</h2>	    	
+    	<h2>Current Date: @DateFormat.getDateInstance(DateFormat.SHORT, lang.toLocale).format(date)</h2>
+    	<h2>A large number formatted to locale: @NumberFormat.getInstance(lang.toLocale).format(1000000)</h2>
+    	<h2>Currency formatted to locale: @NumberFormat.getCurrencyInstance(lang.toLocale).format(2000.04)</h2>
     </div>
 
 }

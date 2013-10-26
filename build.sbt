@@ -1,6 +1,6 @@
 import play.Project._
 
-name := """I8N"""
+name := """I18N"""
 
 version := "1.0-SNAPSHOT"
 

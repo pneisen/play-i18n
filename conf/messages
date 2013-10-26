@@ -1,2 +1,2 @@
 Hello=Hello {0}
-string.not.in.fr=This is a string not in French.
+string.not.in.fr=This is a string not in French and should show in the default language (en).
