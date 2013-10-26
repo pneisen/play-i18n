@@ -1,2 +1,1 @@
-hello=bonjour
-Hello.name=Bonjour {0}
+Hello=Bonjour {0}

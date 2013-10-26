@@ -1,2 +1,2 @@
-hello=hello
-Hello.name=Hello {0}
+Hello=Hello {0}
+string.not.in.fr=This is a string not in French.
